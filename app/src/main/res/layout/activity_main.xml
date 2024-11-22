@@ -10,10 +10,13 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list_book"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:clipToPadding="false"
         android:paddingTop="0dp"
-        android:paddingBottom="0dp" />
+        android:paddingBottom="0dp"
+        android:divider="@android:color/black"
+        android:dividerHeight="10dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/add_product"

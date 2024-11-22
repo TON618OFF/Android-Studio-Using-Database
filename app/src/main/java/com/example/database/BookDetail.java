@@ -24,8 +24,8 @@ public class BookDetail extends AppCompatActivity {
 
         Intent intent = getIntent();
         bookId = intent.getIntExtra("BOOK_ID", -1);
-        String bookName = intent.getStringExtra("BOOK_NAME");
-        String bookAuthor = intent.getStringExtra("BOOK_AUTHOR");
+        String bookName = intent.getStringExtra("BOOK_AUTHOR"); // требуется указать автора, чтобы поля при открытии деталей о книге не перемешивались
+        String bookAuthor = intent.getStringExtra("BOOK_NAME"); // требуется указать название, чтобы поля при открытии деталей о книге не перемешивались
 
         editTextName.setText(bookName);
         editTextAuthor.setText(bookAuthor);
